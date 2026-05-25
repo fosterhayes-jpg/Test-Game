@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://58yx66nt1pqw"]
+
+[ext_resource type="Texture2D" uid="uid://dqf30ak3i834a" path="res://Assets/Jack.webp" id="1_vk57k"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qqy1o"]
+size = Vector2(289, 204.5)
+
+[node name="level 1" type="Node2D" unique_id=1321934831]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1783221938]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=1255452880]
+position = Vector2(452.5, 275.75)
+shape = SubResource("RectangleShape2D_qqy1o")
+
+[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D" unique_id=1090954986]
+position = Vector2(454, 277)
+texture = ExtResource("1_vk57k")
