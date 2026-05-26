@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://blokxc4a22be1"]
+
+[ext_resource type="Texture2D" uid="uid://bdalaeduwrym0" path="res://Assets/Dirt Block.png" id="1_n0yh8"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7odni"]
+size = Vector2(32, 32)
+
+[node name="block" type="CharacterBody2D" unique_id=1712012060]
+scale = Vector2(4, 4)
+metadata/_edit_group_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1578837050]
+shape = SubResource("RectangleShape2D_7odni")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1839358721]
+texture = ExtResource("1_n0yh8")
