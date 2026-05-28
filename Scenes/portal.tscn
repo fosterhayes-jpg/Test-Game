@@ -6,7 +6,7 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_j20fm"]
 size = Vector2(48, 128)
 
-[node name="Area2D" type="Area2D" unique_id=106480278]
+[node name="portal" type="Area2D" unique_id=106480278]
 scale = Vector2(2, 2)
 metadata/_edit_group_ = true
 
@@ -16,3 +16,5 @@ shape = SubResource("RectangleShape2D_j20fm")
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=2126551352]
 texture = ExtResource("1_j20fm")
 script = ExtResource("2_oi2tk")
+
+[connection signal="body_entered" from="." to="Sprite2D" method="_on_portal_body_entered"]

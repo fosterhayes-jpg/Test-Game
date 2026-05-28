@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://berjdgey74hb8"]
+
+[ext_resource type="Script" uid="uid://7i7suv4fuf1x" path="res://Scripts/endgame.gd" id="1_4qhd6"]
+
+[node name="endgame" type="Node2D" unique_id=1025791743]
+script = ExtResource("1_4qhd6")
+
+[node name="Button" type="Button" parent="." unique_id=1634656705]
+offset_right = 1152.0
+offset_bottom = 648.0
+text = "Play again"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
