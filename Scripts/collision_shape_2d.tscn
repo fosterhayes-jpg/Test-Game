@@ -1,3 +1,0 @@
-[gd_scene format=3 uid="uid://xn5erpbgchxm"]
-
-[node name="blocks" type="CollisionShape2D" unique_id=357159048]
